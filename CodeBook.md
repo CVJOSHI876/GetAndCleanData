@@ -13,13 +13,14 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
 
 ### The Data:
-The input data set include following files  
-features.txt -		List all features  
-activity_labels - 	Links the class labels with their activity name  
-X_train.txt-		Training data set  
-Y_train.txt - 		Training labels  		 
-X_test,txt - 		Test data set  
-Y_test.txt - 		Test labels  
+The input data set include following files   
+
+* features.txt -		List all features  
+* activity_labels - 	Links the class labels with their activity name  
+* X_train.txt-		Training data set  
+* Y_train.txt - 		Training labels  		 
+* X_test,txt - 		Test data set  
+* Y_test.txt - 		Test labels  
 
 ### Transformation Details:
 The R script called run_analysis.R is written which perfrom following steps
@@ -45,21 +46,21 @@ The R script called run_analysis.R is written which perfrom following steps
 ### The Variables:
 The R script - run_analysis uses following variables to carry out above steps
 
-workingDir - working directory
-features - List of all features withing the time window measurement  
-activities - stores activity the use perform  
-subTraining - Who perform the activity ( training) for each window  
-xTraining - Training data set  
-yTraining- Training labels  
-subTest - Who perform the activity ( test ) for each window  
-xTest - Test data set  
-yTest - Test labels  
-combinedTrainData - combined training data sets ( x, y and subject)  
-combinedTestData - combined test data sets  
-labels - activity code  
-descLabels- activity labels/description  
-finalData - Megerd data set  
-tidyData - new, independent and cleaned data set  
+* workingDir - working directory
+* features - List of all features withing the time window measurement  
+* activities - stores activity the use perform  
+* subTraining - Who perform the activity ( training) for each window  
+* xTraining - Training data set  
+* yTraining- Training labels  
+* subTest - Who perform the activity ( test ) for each window  
+* xTest - Test data set  
+* yTest - Test labels  
+* combinedTrainData - combined training data sets ( x, y and subject)  
+* combinedTestData - combined test data sets  
+* labels - activity code  
+* descLabels- activity labels/description  
+* finalData - Megerd data set  
+* tidyData - new, independent and cleaned data set  
 
 ### Running run_analysis.R
 Please refer to README.md file for detailed instruction to run R script.
